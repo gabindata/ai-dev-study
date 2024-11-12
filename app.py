@@ -13,3 +13,4 @@ class TextInput(BaseModel):
 async def predict_sentiment(input: TextInput):
     prediction = model.predict(input.text)
     return {"text": input.text, "sentiment": prediction}
+
